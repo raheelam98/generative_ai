@@ -18,3 +18,18 @@ LangGraph is an open-source library for building stateful, multi-actor applicati
 ## Fine-tuning
 Fine-tuning is the process of customizing a pre-trained machine learning model by training it on specific, smaller datasets to improve performance for a particular task. It allows the model to adapt its knowledge to domain-specific requirements while retaining its general capabilities.
 
+## Embedding
+
+[Embedding](https://developers.google.com/machine-learning/glossary#embedding-vector) is a technique used to represent information as a list of floating point numbers in an array. With Gemini, you can represent text (words, sentences, and blocks of text) in a vectorized form, making it easier to compare and contrast embeddings. For example, two texts that share a similar subject matter or sentiment should have similar embeddings, which can be identified through mathematical comparison techniques such as cosine similarity. For more on how and why you should use embeddings, refer to the [Embeddings guide](https://ai.google.dev/docs/embeddings_guide).
+
+Use the `embed_content` method to generate embeddings. The method handles embedding for the following tasks (`task_type`):
+
+Task Type | Description
+---       | ---
+RETRIEVAL_QUERY	| Specifies the given text is a query in a search/retrieval setting.
+RETRIEVAL_DOCUMENT | Specifies the given text is a document in a search/retrieval setting. Using this task type requires a `title`.
+SEMANTIC_SIMILARITY	| Specifies the given text will be used for Semantic Textual Similarity (STS).
+CLASSIFICATION	| Specifies that the embeddings will be used for classification.
+CLUSTERING	| Specifies that the embeddings will be used for clustering.
+
+[Gemini_API_python.ipynb](https://colab.research.google.com/github/EnggQasim/5_days_AI_Agents_Training/blob/main/02_Embedding_Gemini_Mulvis/Gemini_API_python.ipynb#scrollTo=BpHIRU5bj7aW)
