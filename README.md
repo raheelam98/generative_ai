@@ -18,6 +18,10 @@ LangGraph is an open-source library for building stateful, multi-actor applicati
 ## Fine-tuning
 Fine-tuning is the process of customizing a pre-trained machine learning model by training it on specific, smaller datasets to improve performance for a particular task. It allows the model to adapt its knowledge to domain-specific requirements while retaining its general capabilities.
 
+## RAG
+
+RAG (Retrieval-Augmented Generation) is an AI framework combining retrieval and generation, where relevant context is fetched from an external knowledge base (retrieval) to improve the quality of AI-generated responses (generation). This approach ensures accurate, context-aware outputs for tasks like Q&A or summarization.
+
 ## Embedding
 
 [Embedding](https://developers.google.com/machine-learning/glossary#embedding-vector) is a technique used to represent information as a list of floating point numbers in an array. With Gemini, you can represent text (words, sentences, and blocks of text) in a vectorized form, making it easier to compare and contrast embeddings. For example, two texts that share a similar subject matter or sentiment should have similar embeddings, which can be identified through mathematical comparison techniques such as cosine similarity. For more on how and why you should use embeddings, refer to the [Embeddings guide](https://ai.google.dev/docs/embeddings_guide).
